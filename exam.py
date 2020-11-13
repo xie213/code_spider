@@ -74,7 +74,7 @@ def detail_content(id):
     print("----------------------------",title)
     html = sp.get_url(detail.url)
     content = sp.read_parse(html)
-    print("这是我的第二个版本")
+    print("这是我的第san个版本")
     return render_template("content.html", content = content,title = detail.list_name)
 
 if __name__ == '__main__':
