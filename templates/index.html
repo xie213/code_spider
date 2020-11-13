@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小数主页</title>
+</head>
+<body>
+    <table>
+        {% for i in s_all %}
+            <tr>
+                <td><a href="{{ url_for('detail_list',id = i.id) }}">{{ i.name }}</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
